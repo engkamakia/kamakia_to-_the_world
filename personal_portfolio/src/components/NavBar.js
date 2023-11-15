@@ -3,8 +3,11 @@ import { Navbar, Container } from "react-bootstrap";
 import React from "react";
 
 export const NavBar = () => {
-  return (
-    const [activeLink, setActiveLink] = useState('home');
+
+    const [activeLink, setActiveLink] = useState("home");
+    const [scrolled, setScrolled] = useState(false);
+
+  return (    
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="/">
